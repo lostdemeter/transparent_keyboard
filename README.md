@@ -49,6 +49,10 @@ Example:
 python transparent_keyboard.py --x 200 --y 300 --width 1000 --height 350
 ```
 
+## Project Screenshot
+
+![Transparent Keyboard Project](assets/TransparentKeyboard.png)
+
 ## Configuration
 
 The keyboard appearance and behavior can be customized through the `transparent_keyboard_settings.py` file.
