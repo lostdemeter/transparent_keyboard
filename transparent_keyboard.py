@@ -2,9 +2,10 @@
 import tkinter as tk
 from tkinter import ttk
 import sys
-import keyboard_settings as settings
+import transparent_keyboard_settings as settings
 import subprocess
 import pyperclip
+import argparse
 
 class TransparentKeyboard(tk.Tk):
     """
@@ -568,5 +569,14 @@ class TransparentKeyboard(tk.Tk):
         self.focus_force()  # Force focus back to the window after dragging
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Transparent Keyboard')
+    parser.add_argument('--x', type=int, help='Window X position', default=100)
+    parser.add_argument('--y', type=int, help='Window Y position', default=100)
+    parser.add_argument('--width', type=int, help='Window width', default=800)
+    parser.add_argument('--height', type=int, help='Window height', default=300)
+    
+    args = parser.parse_args()
+    
     app = TransparentKeyboard()
+    app.geometry(f"{args.width}x{args.height}+{args.x}+{args.y}")
     app.mainloop()
