@@ -19,6 +19,12 @@ class TransparentKeyboard(tk.Tk):
     - Copy and paste support
     - Modern UI with customizable appearance through settings
     
+    Command Line Arguments:
+        --x: Window X position (default: 100)
+        --y: Window Y position (default: 100)
+        --width: Window width (default: 1200)
+        --height: Window height (default: 400)
+    
     Attributes:
         text_var (tk.StringVar): Stores the current input text
         caps_lock_on (bool): Tracks the state of caps lock
@@ -572,8 +578,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Transparent Keyboard')
     parser.add_argument('--x', type=int, help='Window X position', default=100)
     parser.add_argument('--y', type=int, help='Window Y position', default=100)
-    parser.add_argument('--width', type=int, help='Window width', default=800)
-    parser.add_argument('--height', type=int, help='Window height', default=300)
+    parser.add_argument('--width', type=int, help='Window width', default=1200)
+    parser.add_argument('--height', type=int, help='Window height', default=400)
     
     args = parser.parse_args()
     

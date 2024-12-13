@@ -34,7 +34,19 @@ pip install -r requirements.txt
 
 Run the keyboard application:
 ```bash
-python transparent_keyboard.py
+python transparent_keyboard.py [options]
+```
+
+### Command Line Arguments
+
+- `--x`: Window X position (default: 100)
+- `--y`: Window Y position (default: 100)
+- `--width`: Window width (default: 1200)
+- `--height`: Window height (default: 400)
+
+Example:
+```bash
+python transparent_keyboard.py --x 200 --y 300 --width 1000 --height 350
 ```
 
 ## Configuration
