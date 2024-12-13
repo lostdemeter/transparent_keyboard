@@ -2,6 +2,21 @@
 
 A customizable, transparent virtual keyboard implementation in Python using Tkinter.
 
+## Overview
+
+### Purpose
+
+Transparent Keyboard is a specialized virtual keyboard designed for scenarios where a physical keyboard is inconvenient, particularly when using a PC remote. Its core functionality allows users to bind the keyboard launch to a shortcut, enabling quick text input and immediate pasting into the previously focused application.
+
+### Use Case
+
+Ideal for media centers, home theater PCs, or any setup controlled primarily by a remote control. With a single shortcut setup to launch the keyboard, users can:
+- Launch a transparent keyboard using their PC remote
+- Type text directly
+- Automatically paste the text into whatever application was active before launching the keyboard
+
+This eliminates the need to have a remote with a dedicated physical keyboard.
+
 ## Features
 
 - Transparent, draggable window
@@ -64,3 +79,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+{{ ... }}
